@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Catculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://cdn-icons-png.flaticon.com/512/7037/7037893.png" alt="icon" />
+    <h1>Exchange Rate Calculator</h1>
+    <div class="container">
+        <div class="currency">
+            <select id="currency-one">
+                <option value="USD" selected>USD</option>
+                <option value="AED">AED</option>
+                <option value="INR">INR</option>
+                <option value="ALL" >ALL</option>
+            </select>
+            <input type="number" id="amount-one" value="1" />
+        </div>
+        <div class="swap-rate-container">
+            <button id="swap" class="swap" >SWAP</button>
+            <span id="rate" class="rate"></span>
+        </div>
+        <div class="currency">
+            <select id="currency-two">
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="INR" selected>INR</option>
+                <option value="ALL" >ALL</option>
+            </select>
+            <input type="number" id="amount-two" value="1" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
